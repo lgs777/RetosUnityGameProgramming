@@ -15,6 +15,16 @@ public class Player : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		
-	}
+        if (Input.GetKey(KeyCode.W))
+        {
+            PlayerRigidbody.AddForce(0, 0, speed);
+        }
+
+        if (Input.GetKey(KeyCode.A))
+        {
+            PlayerRigidbody.AddForce(0, 0, -speed);
+        }
+
+
+    }
 }
