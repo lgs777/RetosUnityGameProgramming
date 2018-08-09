@@ -23,6 +23,7 @@ public class Player : MonoBehaviour {
             return;
         }
 
+
         float inputX = Input.GetAxis("Horizontal");
         float inputZ = Input.GetAxis("Vertical");
  
